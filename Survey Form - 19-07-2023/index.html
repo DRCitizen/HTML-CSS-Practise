@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="DNS.Soft">
+        <title>Survey Form</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <!-- head - Googlefonts link -->
+    </head>
+
+    <body>
+
+        <div id="outside">
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+            <h1 id="title">Application for permission to date with your daughter</h1>
+            <p id="description"><b>Note:</b>Form must be completed at least 21 days prior to the date</p>
+
+            <!------------------Personal Details-------------------------------------->
+
+            <fieldset>
+
+                <!-- Groups of widgets that share the same purpose, for styling and semantic purposes-->
+                <legend>Personal Details</legend>
+                <!-- formally describes the purpose of the fieldset it is included inside. -->
+
+                <div>
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" required id="name" name="user_name" placeholder="Please enter name here"> 
+                </div><br>
+                <div>
+                    <label for="address-label">Address:</label>
+                    <input type="Address" id="address" name="Address" placeholder="Please enter your address here">
+                </div><br>
+                <div>
+                    <label id="email-label" for="Email">Email:</label>
+                    <input type="email" required id="email" name="user_name" placeholder="Please enter your email here"> 
+                </div><br>
+                <div>
+                    <label id="number-label" for="phone">Phone Number:</label>
+                    <input type="number" id="number" name="user_name" placeholder="Please enter a 10 digit number" min="1" max="9">
+                </div><br>
+                <div>
+                    <label id="iq-label" for="iq">IQ:</label>
+                    <input type="number" id="iq" name="iq" placeholder="Please enter your IQ level here"> 
+                </div><br>
+
+             <!--------------------------------Radio Buttons----------------------------------------------------------->
+
+                <div>
+                    <label for="Gender">Gender:</label>
+                    <p>
+                        <input type="radio" name="gender" value="male"  checked>Male<br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                        <input type="radio" name="gender" value="other">Other
+                </div>
+                <label for="date-label">Date of Proposed Event:</label>
+                <input type="date" name="bday">
+            </fieldset><br>
+
+        <!-------------------------------Checkboxes--------------------------------------------------------------->
+
+            <fieldset>
+                <label for="Gender">Check All That Apply to You</label>
+                <p>
+                    <input type="checkbox" name="tattoo" value="tattoo">I have tattoos or piercings<br>
+                    <input type="checkbox" name="age" value="age">I am more than 2 years older than your daughter<br>
+                    <input type="checkbox" name="car" value="car">I own a panel van or suv<br>
+                    <input type="checkbox" name="work" value="work" checked>I work full-time<br>
+                    <input type="checkbox" name="rich" value="rich" checked>My parents are rich<br>
+                    <input type="checkbox" name="public" value="public" checked>The date is at a well lit public location<br> 
+                </p>
+
+            </fieldset><br>
+
+            <!-------------------------------Dropdown menus---------------------------------------------------------->
+
+            <fieldset>
+                <div>
+                    <label for="politics">What are your political persuasions?</label>
+                    <select id="dropdown">
+                <option value="left">Left-Wing</option>
+                <option value="socialist">Socialist</option>
+                <option value="marxist">Marxist</option>
+                <option value="right">Right-Wing</option>
+                <option value="liberal">Liberal</option>
+                <option value="nazi">Neo-Nazi</option>
+                </select>
+
+                    <label for="politics">Education Level Completed</label>
+                    <select id="dropdown2">
+                        <option value="University">University</option>
+                        <option value="College">College</option>
+                        <option value="Secondary">High School</option>
+                        <option value="None">None</option>
+                    </select>
+                </div>
+            </fieldset><br>
+
+            <!-----------------------Text Areas-------------------------------------------->
+
+            <fieldset>
+                <legend>Essay Section</legend>
+                <div>
+                  <label for="msg"></label>   
+                  <p>In 50 words or more explain why you want to date his / her daughter</p>
+                  <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter your text here"></textarea>  </div>
+                <div>
+                    <label for="msg">Please upload contact details for 2 references</label><br>
+                    <textarea id="message" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea> </div>
+                <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+                  <button>Attach Files</button></p>
+            </fieldset>
+
+            <div id="submitbutton">
+                <button type="submit" id="submit">Send your application</button>    </div>
+            
+        </form>
+          </div>
+
+    </body>
+</html>
