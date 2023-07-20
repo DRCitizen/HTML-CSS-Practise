@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf8">
+        <meta name="author" content="DNS.Soft">
+        <title>Hamburger type Menu</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav role="navigation">
+
+            <div id="menuToggle">
+                <!--This is fake / hidden checkbox used as click receiver, so you can use the :checked selector on it.-->
+
+                <input type="checkbox" />
+
+                <!--Some spans to act as a hamburger, not that McDonalds stuff. -->
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--Too bad the menu has to be inside of the button  but hey, it's pure CSS magic.-->
+
+                <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="https://www.w3schools.com/" target="_blank"><li>Show me More</li></a>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </body>
+
+</html>
